@@ -1,3 +1,6 @@
 {
-  "name": "nuxt-boilerplate"
+  "name": "nuxt-boilerplate",
+  "devDependencies": {
+    "git-commit-msg-linter": "^5.0.7"
+  }
 }
