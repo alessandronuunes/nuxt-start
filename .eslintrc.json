@@ -1,3 +1,17 @@
 {
-  "extends": ["@nuxtjs/eslint-config-typescript"]
+    "extends": ["@nuxtjs/eslint-config-typescript"],
+    "overrides": [
+        {
+            "files": ["*.vue"],
+            "rules": {
+                "indent": "off"
+            }
+        }
+    ],
+    "rules": {
+        "quotes": ["error", "double"],
+        "indent": ["error", 4],
+        "vue/html-indent": ["error", 4],
+        "vue/script-indent": ["error", 4, { "baseIndent": 1 }]
+    }
 }

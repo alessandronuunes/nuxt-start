@@ -1,7 +1,7 @@
-import type { Config } from 'tailwindcss'
+import type { Config } from "tailwindcss"
 
 const config: Config = {
-  content: ['./src/**/*.{js,ts,vue}']
+    content: ["./src/**/*.{js,ts,vue}"]
 }
 
 export default config
