@@ -1,5 +1,6 @@
 {
   "*.{js,ts,vue}": [
-    "npm run lint:fix"
+    "npm run lint:fix",
+    "npm run prettier:fix"
   ]
 }
