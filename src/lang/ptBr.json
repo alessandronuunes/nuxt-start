@@ -1,0 +1,10 @@
+{
+  "error": {
+    "404": {
+      "title": "Página não encontrada",
+      "description": "Não localizamos a página que tentou acessar. Por favor, confira se está correto.",
+      "back": "Voltar ao início",
+      "support": "Contactar o suporte "
+    }
+  }
+}
