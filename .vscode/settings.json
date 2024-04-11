@@ -1,7 +1,8 @@
 {
-    "editor.defaultFormatter": "esbenp.prettier-vscode",
-    "editor.formatOnSave": true,
+    "editor.defaultFormatter": "esbenp.prettier-vscode", // Use Prettier as default formatter.
+    "editor.formatOnSave": true, // Format code on save.
     "editor.codeActionsOnSave": {
-        "source.fixAll.eslint": "explicit"
+        "source.fixAll.eslint": "always", // Run Eslint autofix on save.
+        "source.organizeImports": "always" // Run organize imports on save.
     }
 }
