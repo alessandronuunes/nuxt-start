@@ -3,10 +3,10 @@ type Getters = { doubleCount: (state: State) => number }
 type Mutations = { increment: () => void }
 
 export const useCounterStore = defineStore<
-    "counter",
-    State,
-    Getters,
-    Mutations
+        "counter",
+        State,
+        Getters,
+        Mutations
 >("counter", {
     state: () => ({ count: 0 }),
     getters: {

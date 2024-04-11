@@ -18,14 +18,14 @@ export default defineNuxtConfig({
     modules: ["@nuxtjs/tailwindcss", "nuxt-primevue", "@pinia/nuxt", "@nuxtjs/i18n"],
     primevue: {
         options: {
-            unstyled: true
-        },
-        importPT: { from: path.resolve(__dirname, "src/presets/lara/") } // import and apply preset
+            // unstyled: true
+        }
+        // importPT: { from: path.resolve(__dirname, "src/presets/wind/") } // import and apply preset
     },
     tailwindcss: {
         configPath: path.resolve(__dirname, "tailwind.config.ts")
     },
-    css: ["primeicons/primeicons.css"],
+    css: ["primeicons/primeicons.css", "primevue/resources/themes/aura-light-teal/theme.css"],
     // https://i18n.nuxtjs.org/
     i18n: {
         strategy: "no_prefix",

@@ -2,6 +2,6 @@
     "editor.formatOnSave": false, // Disable default formatter on save.(causes conflict with Prettier/ESlint)
     "editor.codeActionsOnSave": {
         "source.fixAll.eslint": "always", // Run Eslint autofix on save.
-        "source.organizeImports": "always" // Run organize imports on save.
+        // "source.organizeImports": "always" // Run organize imports on save.
     }
 }
