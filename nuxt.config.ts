@@ -4,7 +4,7 @@ import path from "node:path"
 export default defineNuxtConfig({
     devtools: { enabled: true },
     srcDir: "src",
-    modules: ["@nuxtjs/tailwindcss", "nuxt-primevue"],
+    modules: ["@nuxtjs/tailwindcss", "nuxt-primevue", "@pinia/nuxt"],
     primevue: {
         options: {
             unstyled: true
