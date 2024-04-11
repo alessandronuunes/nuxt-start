@@ -1,7 +1,7 @@
 import type { ModuleOptions } from "@nuxtjs/tailwindcss"
 
 const tailwindConfig: ModuleOptions["config"] = {
-    content(contentDefaults) {
+    content (contentDefaults) {
         return [...contentDefaults, "./src/presets/**/*.{vue,js,ts}"]
     },
     theme: {

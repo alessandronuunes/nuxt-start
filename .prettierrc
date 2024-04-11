@@ -1,8 +1,0 @@
-{
-    "vueIndentScriptAndStyle": true,
-    "trailingComma": "none",
-    "tabWidth": 4,
-    "semi": false,
-    "singleQuote": false,
-    "plugins": ["prettier-plugin-tailwindcss"]
-}
