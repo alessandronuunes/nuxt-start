@@ -1,8 +1,17 @@
 <script setup lang="ts">
     definePageMeta({
-        layout: "dash"
+        layout: "dash",
+        middleware: ["auth"]
     })
-
+    useHead({
+        title: "Dashboard",
+        meta: [
+            {
+                name: "description",
+                content: "Dashboard page"
+            }
+        ]
+    })
 </script>
 <template>
     <Card>

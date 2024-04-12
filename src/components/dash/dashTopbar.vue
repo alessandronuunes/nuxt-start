@@ -55,7 +55,16 @@
             badge: 3
         }
     ])
+    const op = ref()
+    const members = ref([
+        { name: "Amy Elsner", image: "amyelsner.png", email: "amy@email.com", role: "Owner" },
+        { name: "Bernardo Dominic", image: "bernardodominic.png", email: "bernardo@email.com", role: "Editor" },
+        { name: "Ioni Bowcher", image: "ionibowcher.png", email: "ioni@email.com", role: "Viewer" }
+    ])
 
+    const toggle = (event) => {
+        op.value.toggle(event)
+    }
 </script>
 <template>
     <header class=" bg-white shadow">
@@ -109,12 +118,61 @@
                     <InputText
                         placeholder="Search"
                         type="text"
-                        class="w-8rem sm:w-auto"
                     />
-                    <Avatar
-                        image="https://primefaces.org/cdn/primevue/images/avatar/amyelsner.png"
-                        shape="circle"
-                    />
+                    <div class="card justify-content-center flex">
+                        <div
+                            class="cursor-pointer"
+                            @click="toggle"
+                        >
+                            <Avatar
+                                image="https://primefaces.org/cdn/primevue/images/avatar/amyelsner.png"
+                                shape="circle"
+                            />
+                            <Button
+                                icon="pi pi-angle-down"
+                                type="button"
+                                class="p-button-rounded p-button-text"
+                            />
+                        </div>
+                        <OverlayPanel ref="op">
+                            <div class="flex-column w-25rem flex gap-3">
+                                <div>
+                                    <span class="text-900 mb-2 block font-medium">Share this document</span>
+                                    <InputGroup>
+                                        <InputText value="https://primevue.org/12323ff26t2g243g423g234gg52hy25XADXAG3" readonly class="w-25rem" />
+                                        <InputGroupAddon>
+                                            <i class="pi pi-copy" />
+                                        </InputGroupAddon>
+                                    </InputGroup>
+                                </div>
+                                <div>
+                                    <span class="text-900 mb-2 block font-medium">Invite Member</span>
+                                    <InputGroup>
+                                        <Chips disabled />
+                                        <Button label="Invite" icon="pi pi-users" />
+                                    </InputGroup>
+                                </div>
+                                <div>
+                                    <span class="text-900 mb-2 block font-medium">Team Members</span>
+                                    <ul class="flex-column m-0 flex list-none gap-3 p-0">
+                                        <li v-for="member in members" :key="member.name" class="align-items-center flex gap-2">
+                                            <img :src="`https://primefaces.org/cdn/primevue/images/avatar/${member.image}`" style="width: 32px">
+                                            <div>
+                                                <span class="font-medium">{{ member.name }}</span>
+                                                <div class="text-color-secondary text-sm">
+                                                    {{ member.email }}
+                                                </div>
+                                            </div>
+                                            <div class="align-items-center text-color-secondary ml-auto flex gap-2 text-sm">
+                                                <span>{{ member.role }}</span>
+                                                <i class="pi pi-angle-down" />
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </OverlayPanel>
+                    </div>
                 </div>
             </template>
         </Menubar>

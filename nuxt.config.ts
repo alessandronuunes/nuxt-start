@@ -15,12 +15,12 @@ export default defineNuxtConfig({
     imports: {
         dirs: [path.resolve("./stores"), "~/stores"]
     },
-    modules: ["@nuxtjs/tailwindcss", "nuxt-primevue", "@pinia/nuxt", "@nuxtjs/i18n"],
+    modules: ["@nuxtjs/tailwindcss", "nuxt-primevue", "@pinia/nuxt", "@nuxtjs/i18n", "@vueuse/nuxt"],
     primevue: {
         options: {
             // unstyled: true
         }
-        // importPT: { from: path.resolve(__dirname, "src/presets/wind/") } // import and apply preset
+        // importPT: { from: path.resolve(__dirname, "src/assets/presets/wind/") } // import and apply preset
     },
     tailwindcss: {
         configPath: path.resolve(__dirname, "tailwind.config.ts")

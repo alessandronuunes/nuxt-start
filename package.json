@@ -14,18 +14,20 @@
     },
     "dependencies": {
         "@pinia/nuxt": "^0.5.1",
-        "pinia": "^2.1.7",
         "nuxt": "^3.11.2",
+        "pinia": "^2.1.7",
         "primeicons": "^7.0.0",
         "primevue": "^3.51.0",
         "vue": "^3.4.21",
         "vue-router": "^4.3.0"
     },
     "devDependencies": {
-        "@nuxtjs/i18n": "^8.0.0",
         "@nuxt/devtools": "latest",
         "@nuxtjs/eslint-config-typescript": "^12.1.0",
+        "@nuxtjs/i18n": "^8.0.0",
         "@nuxtjs/tailwindcss": "^6.11.4",
+        "@vueuse/core": "^10.9.0",
+        "@vueuse/nuxt": "^10.9.0",
         "eslint-plugin-tailwindcss": "^3.15.1",
         "git-commit-msg-linter": "^5.0.7",
         "husky": "^9.0.11",
